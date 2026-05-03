@@ -1,117 +1,85 @@
-/* RESET */
-* {
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #f9d6ff);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5a3e4d;
 }
 
-/* FUNDO GERAL */
-body {
-  height: 100vh;
-  background: linear-gradient(135deg, #fdf2f8, #f3e8ff, #fce7f3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 40px 20px;
-  color: #4b2e4c;
-}
-
-/* TÍTULO */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #b83280;
-  font-weight: 600;
-}
-
-/* CONTAINER PRINCIPAL */
 .container {
-  width: 100%;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* CARDS (SEÇÕES) */
+h1 {
+  text-align: center;
+  color: #d63384;
+}
+
 .card {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
+  background: #fff0f6;
+  padding: 20px;
   border-radius: 20px;
-  padding: 25px;
-  box-shadow: 0 10px 25px rgba(184, 50, 128, 0.15);
-  transition: transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-.card:hover {
-  transform: translateY(-3px);
-}
-
-/* TEXTOS */
-p {
-  font-size: 1.1rem;
-  margin: 8px 0;
-}
-
-/* INPUTS */
-input {
+input, textarea {
+  width: 100%;
+  margin-top: 10px;
   padding: 12px;
-  border-radius: 15px;
-  border: 1px solid #f9a8d4;
+  border-radius: 12px;
+  border: 1px solid #f3c6d3;
   outline: none;
-  margin-right: 10px;
-  background-color: #fff;
-  transition: 0.2s;
+  font-size: 14px;
 }
 
-input:focus {
-  border-color: #ec4899;
-  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
+textarea {
+  resize: none;
+  height: 80px;
 }
 
-/* BOTÕES */
 button {
-  padding: 12px 20px;
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
   border: none;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #f472b6, #c084fc);
+  border-radius: 15px;
+  background: #ff85a2;
   color: white;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: 0.3s;
 }
 
 button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(192, 132, 252, 0.4);
+  background: #ff5c8a;
 }
 
-/* RESULTADOS */
-.resultado {
-  margin-top: 15px;
-  font-weight: 500;
-  color: #7e22ce;
+.mood-item {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  border-left: 5px solid #ff85a2;
 }
 
-/* RESPONSIVO */
-@media (max-width: 600px) {
-  .container {
-    gap: 15px;
-  }
+.actions {
+  margin-top: 10px;
+}
 
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
+.actions button {
+  width: auto;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
 
-  input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.delete {
+  background: #ff4d6d;
+}
 
-  button {
-    width: 100%;
-  }
+.edit {
+  background: #c77dff;
 }

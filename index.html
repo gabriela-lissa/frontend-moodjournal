@@ -7,16 +7,27 @@
 </head>
 <body>
 
-<h1>Mood Journal</h1>
+<div class="container">
+  <h1>🌷 Mood Journal</h1>
 
-<input id="humor" placeholder="Humor">
-<input id="nota" type="number" placeholder="Nota">
-<input id="descricao" placeholder="Descrição">
+  <!-- FORM -->
+  <div class="card">
+    <h2>Novo registro</h2>
 
-<button onclick="criar()">Adicionar</button>
+    <input id="humor" placeholder="Seu humor (feliz, ansiosa...)" />
+    <input id="nota" type="number" placeholder="Nota (0-10)" />
+    <textarea id="descricao" placeholder="Como foi seu dia..."></textarea>
 
-<div id="lista"></div>
+    <button onclick="salvarMood()">Salvar</button>
+  </div>
 
-<script src="script.js"></script>
+  <!-- LISTA -->
+  <div class="card">
+    <h2>Seus dias 💌</h2>
+    <div id="lista"></div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
